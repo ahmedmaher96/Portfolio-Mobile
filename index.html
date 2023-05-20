@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maher</title>
+    <link rel="icon" href="./Img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./FontAwesome/all.min.css">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- H O M E -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
+            <div class="container">
+                <a class="navbar-brand" href="#home">MAHER</a>
+                <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Guide
+                            </a>
+                            <ul class="dropdown-menu bg-dark text-primary">
+                                <li><a class="dropdown-item text-primary" href="#services">Services</a></li>
+                                <li><a class="dropdown-item text-primary" href="#portfolio">Protfolio</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-primary" href="#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <img src="./Img/Photo.jpg" alt="Ahmed Maher">
+            <h1 class="h2">Hello I'm Ahmed</h1>
+            <p class="writting h3">I am a</p>
+        </section>
+    </header>
+
+    <!-- S E R V I C E S -->
+    <section id="services">
+        <h2 class="">Services</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-dark">
+                <h3 class="accordion-header h2" id="headingOne">
+                    <button class="accordion-button btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="mx-2"><i class="fa-solid fa-code"></i></span> Front-End
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Creating web pages using modern coding languages and libraries, working on a variety
+                            of
+                            web applications and delivering high-quality code that meets the latest web
+                            standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark">
+                <h3 class="accordion-header h2" id="headingTwo">
+                    <button class="accordion-button collapsed btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="mx-2"><i class="fa-solid fa-gamepad"></i></span> Game Assets
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Creating games using JavaScript, working on a variety of 2D games like casual
+                            titles. Programming game mechanics, designing game levels, creating game
+                            assets, and more
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark">
+                <h3 class="accordion-header h2" id="headingThree">
+                    <button class="accordion-button collapsed btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="mx-2"><i class="fa-solid fa-chart-simple"></i></span> Analysis
+                    </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Creating analytical websites with expertise in custom analytics solutions and
+                            integration
+                            with third-party APIs. Designing intuitive user interfaces for small business
+                            websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- P O R T F O L I O -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="portBody">
+                <h2>Portfolio</h2>
+                <div class="rotMenu">
+                    <div class="menuToggle">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <li style="--i:0" title="Edara Home Page">
+                        <a href="https://ahmedmaher96.github.io/Edara-HomePage/" target="_blank">
+                            <i class="fa-solid fa-home"></i>
+                        </a>
+                    </li>
+                    <li style="--i:1" title="Smart Login">
+                        <a href="https://ahmedmaher96.github.io/Smart-Login/" target="_blank">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                    <li style="--i:2" title="Open World Game">
+                        <a href="https://ahmedmaher96.github.io/OpenWorld-Game/" target="_blank">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </a>
+                    </li>
+                    <li style="--i:3" title="Desert Ship Game">
+                        <a href="https://drive.google.com/file/d/17AINlnhICobGnvr1I-4Jca64O0moWvL_/view?usp=share_link"
+                            target="_blank">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </a>
+                    </li>
+                    <li style="--i:4" title="Gallery React Project">
+                        <a href="https://github.com/ahmedmaher96/Game-Over" target="_blank">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </a>
+                    </li>
+                    <li style="--i:5" title="Gallery React Video">
+                        <a href="https://drive.google.com/file/d/1D1rtMFrLfynAhDUxC-vGs9bN2MmyElqq/view?usp=share_link"
+                            target="_blank">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </a>
+                    </li>
+                    <li style="--i:6" title="github">
+                        <a href="https://github.com/ahmedmaher96?tab=repositories" target="_blank">
+                            <i class="fa-solid fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- C O N T A C T -->
+    <section id="contact">
+        <div class="container">
+            <div class="row shadow py-3">
+                <!-- Left Side -->
+                <div class="col-lg-6">
+                    <h2 class="py-3"><span class="border-bottom border-primary">Send M</span>essage Us</h2>
+                    <input type="text" class="form-control mb-3" id="name" placeholder="Your Name">
+                    <input type="email" class="form-control mb-3" id="email" placeholder="Your Email">
+                    <input type="text" class="form-control mb-3" id="subject" placeholder="Subject">
+                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" placeholder="Message"
+                        rows="3"></textarea>
+                    <div class="text-center">
+                        <button class="btn btn-outline-primary w-50" type="button">Send</button>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="col-lg-6">
+                    <h2 class="py-3"><span class="border-bottom border-primary">Get in T</span>ouch</h2>
+                    <p class="lead">
+                        Staying connected is important, and we'd love to keep in touch with you. Send us to receive
+                        the latest updates, news, and special offers directly to your inbox.
+                        Don't miss out on the chance to stay connected and be a part of our community. Subscribe now!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center py-4">
+            <p>© Copyright <span class="fw-bold">Maher.</span> All Rights Reserved</p>
+        </footer>
+    </section>
+
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

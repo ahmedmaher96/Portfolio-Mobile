@@ -1,0 +1,245 @@
+/* Setting Up CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Scrollbar for FireFox */
+    scrollbar-width: thin; 
+    scrollbar-color: #3500ff #002933;
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+}
+/* Scrollbar For other browsers */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: #002933; /* Color of the track */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3500ff;
+    border-radius: 20px; 
+    border: 3px solid #002933; 
+}
+
+/* Header Section */
+#header{
+    background: linear-gradient( #000050 , #00003d);
+}
+#header nav{
+    z-index: 10;
+}
+#header #home{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#header #home h1{
+    color: #fff;
+}
+.writting{
+    color: #fff;
+    margin-bottom: 50px;
+}
+#home img{
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.writting::after{
+    content: ' |';
+    animation: writting 8s infinite;
+}
+@keyframes writting {
+    0% {content: " D|"; }
+    2% {content: " De|";}
+    4% {content: " Dev|";}
+    7% {content: " Deve|";}
+    9% {content: " Devel|";}
+    11% {content: " Develo|";}
+    13% {content: " Develop|";}
+    15% {content: " Develope|";}
+    17% {content: " Developer|";}
+    20% {content: " Developer|";}
+    22% {content: " Developer|";}
+    24% {content: " Develope|";}
+    26% {content: " Develop|";}
+    28% {content: " Develo|";}
+    30% {content: " Devel|";}
+    33% {content: " Deve|";}
+    35% {content: " Dev|";}
+    37% {content: " De|";}
+    39% {content: " D|";}
+    41% {content: " |";}
+    44% {content: " |";}
+    46% {content: " |";}
+    48% {content: " |";}
+    50% {content: " F|";}
+    52% {content: " Fr|";}
+    54% {content: " Fre|";}
+    57% {content: " Free|";}
+    59% {content: " Freel|";}
+    61% {content: " Freela|";}
+    63% {content: " Freelan|";}
+    65% {content: " Freelanc|";}
+    67% {content: " Freelance|";}
+    70% {content: " Freelancer|";}
+    72% {content: " Freelancer|";}
+    74% {content: " Freelancer|";}
+    76% {content: " Freelance|";}
+    78% {content: " Freelanc|";}
+    80% {content: " Freelan|";}
+    83% {content: " Freela|";}
+    85% {content: " Freel|";}
+    87% {content: " Free|";}
+    89% {content: " Fre|";}
+    91% {content: " Fr|";}
+    94% {content: " F|";}
+    96% {content: " |";}
+    100% {content: " |";}
+}
+
+/* Services Section */
+#services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(#00003d, #000029);
+    color: #fff;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#services h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+/* Portfolio Section */
+#portfolio{
+    padding: 100px;
+    background: linear-gradient(#000029,#000016);
+    color: #fff;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+#portfolio .portBody{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .rotMenu{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .rotMenu li{
+    position: absolute;
+    left: 0%;
+    list-style: none;
+    transform-origin: 12.5rem ;
+    transition: 0.75s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(10rem) ;
+}
+#portfolio .rotMenu li:hover a{
+    background: #000000;
+    color: #e5eae9;
+    border: 1px solid #0035ff;
+}
+#portfolio .rotMenu.active li{
+    transform: rotate(calc(360deg / 7 * var(--i))) ;
+}
+#portfolio .rotMenu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002933;
+    background: #e5eae9;
+    border: 1px solid #e5eae9;
+    text-decoration: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    font-size: 2em;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -7 * var(--i))) ;
+}
+#portfolio .rotMenu .menuToggle{
+    position: absolute;
+    background: #e5eae9;
+    width: 120px;
+    height: 120px;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 1.25s;
+}
+#portfolio .rotMenu .menuToggle{
+    animation: glowPlus 3s infinite linear;
+}
+@keyframes glowPlus{
+    0%, 100% {
+        color: #484848;
+        text-shadow: none;
+    }
+    50% {
+        color: #ff0000;
+        text-shadow:  0 0 20px #933550, 0 0 7px #ff3500, 0 0 20px #933550;
+    }
+}
+#portfolio .rotMenu.active .menuToggle{
+    transform: rotate(315deg);
+    animation: glowPlusActive 3s infinite linear;
+}
+@keyframes glowPlusActive {
+    0%, 100% {
+        color: #484848;
+        text-shadow: none;
+    }
+    50% {
+        color: #359381;
+        text-shadow:  0 0 20px #358193, 0 0 7px #0035ff, 0 0 20px #358193;
+    }
+}
+
+/* C O N T A C T   S E C T I O N */
+#contact{
+    padding: 100px, 20px;
+    background: linear-gradient(#000016,#000003);
+    color: #fff;
+    height: 100dvh;
+}
